@@ -14,9 +14,8 @@ M.black = {
 
 M.cbfmt = {
   cmd = 'cbfmt',
-  args = { '--best-effort', '--stdin-filepath' },
+  args = { '--best-effort', '-p', 'markdown' },
   stdin = true,
-  fname = true,
 }
 
 M['clang-format'] = {
