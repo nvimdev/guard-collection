@@ -1,0 +1,59 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Stylua
+        uses: JohnnyMorganz/stylua-action@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check .
+
+  test:
+    name: Run Test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: rhysd/action-setup-vim@v1
+        id: vim
+        with:
+          neovim: true
+          version: nightly
+      - name: luajit
+        uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "luajit-2.1.0-beta3"
+      - uses: leafo/gh-actions-luarocks@v4
+      - uses: actions/setup-python@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          components: rustfmt, cargo
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: actions/setup-go@v4
+        with:
+          go-version: "1.20.7"
+      - uses: ruby/setup-ruby-pkgs@v1
+        with:
+          ruby-version: "3.2"
+      - name: setup environment
+        shell: bash
+        run: bash ./test/setup.sh
+      - name: formatter test
+        shell: bash
+        run: vusted ./test/formatter
+      - name: linter test
+        shell: bash
+        run: |
+          for linter_test in ./test/linter/*_spec.lua; do
+              vusted $linter_test
+          done
