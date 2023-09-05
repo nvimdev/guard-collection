@@ -2,7 +2,7 @@
 
 - Collection of configuration for [guard.nvim](https://github.com/nvimdev/guard.nvim)
 - Feel free to open PRs! By adding your favourite dev tool, you are helping others that need it.
-- Most of the tools don't have tests, if you happen to use one of them, consider adding one ;)
+- Most of the tools don't have tests (checkbox unchecked), if you happen to use one of them, consider adding one ;)
 
 ## Formatters
 
