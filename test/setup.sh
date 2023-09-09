@@ -8,7 +8,7 @@ sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
-pip -qqq install autopep8 black djhtml isort pylint &
+pip -qqq install autopep8 black djhtml isort pylint yapf &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
 gem install -q rubocop &
