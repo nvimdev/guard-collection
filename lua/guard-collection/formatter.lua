@@ -6,6 +6,12 @@ M.lsp = {
   end,
 }
 
+M.autopep8 = {
+  cmd = 'autopep8',
+  args = { '-' },
+  stdin = true,
+}
+
 M.black = {
   cmd = 'black',
   args = { '--quiet', '-' },
