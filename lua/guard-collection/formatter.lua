@@ -139,4 +139,10 @@ M['sql-formatter'] = {
   stdin = true,
 }
 
+M.yapf = {
+  cmd = 'yapf',
+  args = { '--quiet' },
+  stdin = true,
+}
+
 return M
