@@ -6,6 +6,12 @@ M.lsp = {
   end,
 }
 
+M.autopep8 = {
+  cmd = 'autopep8',
+  args = { '-' },
+  stdin = true,
+}
+
 M.black = {
   cmd = 'black',
   args = { '--quiet', '-' },
@@ -130,6 +136,12 @@ M['swift-format'] = {
 
 M['sql-formatter'] = {
   cmd = 'sql-formatter',
+  stdin = true,
+}
+
+M.yapf = {
+  cmd = 'yapf',
+  args = { '--quiet' },
   stdin = true,
 }
 

@@ -6,7 +6,8 @@
 
 ## Formatters
 
-- `lsp` use `vim.lsp.buf.format`
+- `lsp` using `vim.lsp.buf.format`
+- [x] [autopep8](https://github.com/hhatto/autopep8)
 - [x] [black](https://github.com/psf/black)
 - [x] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
@@ -22,7 +23,7 @@
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
 - [ ] [pg_format](https://github.com/darold/pgFormatter)
 - [x] [prettier](https://github.com/prettier/prettier)
-- [ ] [prettierd](https://github.com/fsouza/prettierd)
+- [x] [prettierd](https://github.com/fsouza/prettierd)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [rustfmt](https://github.com/rust-lang/rustfmt)
 - [ ] [shfmt](https://github.com/mvdan/sh)
@@ -30,6 +31,7 @@
 - [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 - [ ] [swift-format](https://github.com/apple/swift-format)
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
+- [x] [yapf](https://github.com/google/yapf)
 
 ## Linters
 
