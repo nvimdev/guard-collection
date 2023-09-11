@@ -10,6 +10,7 @@
 - [x] [black](https://github.com/psf/black)
 - [x] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
+- [ ] [codespell](https://github.com/codespell-project/codespell)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
