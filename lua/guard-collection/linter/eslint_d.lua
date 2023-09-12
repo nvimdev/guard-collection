@@ -21,6 +21,6 @@ return {
       lint.severities.warning,
       lint.severities.error,
     },
-    source = 'eslint',
+    source = 'eslint_d',
   }),
 }
