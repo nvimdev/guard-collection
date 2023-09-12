@@ -35,6 +35,13 @@ M.djhtml = {
   stdin = true,
 }
 
+M.dprint = {
+  cmd = "dprint",
+  args = { "fmt", "--stdin" },
+  stdin = true,
+  fname = true,
+}
+
 M.fish_indent = {
   cmd = 'fish_indent',
   stdin = true,
