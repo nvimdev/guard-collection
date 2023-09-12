@@ -42,5 +42,6 @@
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
+- [ ] [stylelint](https://stylelint.io/)
 
 ## License MIT
