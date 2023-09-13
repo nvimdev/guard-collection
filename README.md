@@ -36,7 +36,7 @@
 
 - [x] [clang-tidy](https://clang.llvm.org/extra/clang-tidy/)
 - [ ] [codespell](https://github.com/codespell-project/codespell)
-- [ ] [eslint_d](https://www.npmjs.com/package/eslint_d)
+- [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [x] [flake8](https://github.com/PyCQA/flake8)
 - [x] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
