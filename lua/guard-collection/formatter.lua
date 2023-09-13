@@ -93,13 +93,6 @@ M.prettier = {
   stdin = true,
 }
 
-M.prettierd = {
-  cmd = 'prettierd',
-  args = { '--stdin-filepath' },
-  stdin = true,
-  fname = true,
-}
-
 M.rubocop = {
   cmd = 'bundle',
   args = { 'exec', 'rubocop', '-A', '-f', 'quiet', '--stderr', '--stdin' },
