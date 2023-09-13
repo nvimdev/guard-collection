@@ -35,6 +35,10 @@ chmod +x $bin/stylua
 wget -q "$gh/cmhughes/latexindent.pl/releases/download/V3.22.2/latexindent-linux"
 chmod +x latexindent-linux
 mv latexindent-linux $bin/latexindent
+# nixfmt
+wget -q "$gh/serokell/nixfmt/releases/download/v0.5.0/nixfmt"
+chmod +x nixfmt
+mv nixfmt $bin/nixfmt
 
 # test setup
 luarocks install vusted
