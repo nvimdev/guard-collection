@@ -36,6 +36,7 @@
 
 - [x] [clang-tidy](https://clang.llvm.org/extra/clang-tidy/)
 - [ ] [codespell](https://github.com/codespell-project/codespell)
+- [x] [flake8](https://github.com/PyCQA/flake8)
 - [x] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [pylint](https://github.com/PyCQA/pylint)
