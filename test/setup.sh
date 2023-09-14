@@ -10,7 +10,8 @@ luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
 pip -qqq install autopep8 black djhtml flake8 isort pylint yapf &
 npm install -g --silent \
-    prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
+    prettier @fsouza/prettierd sql-formatter shellcheck shfmt dprint &
+dprint config add typescript &
 gem install -q rubocop &
 brew install \
     swiftformat swift-format hadolint google-java-format pgformatter fnlfmt # Block, homebrew takes the longest time
