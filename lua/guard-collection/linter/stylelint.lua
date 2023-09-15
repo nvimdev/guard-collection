@@ -5,6 +5,17 @@ return {
   args = { '--formatter', 'json', '--stdin', '--stdin-filename' },
   stdin = true,
   fname = true,
+  fine = {
+    '.stylelintrc',
+    '.stylelintrc.cjs',
+    '.stylelintrc.js',
+    '.stylelintrc.json',
+    '.stylelintrc.yaml',
+    '.stylelintrc.yml',
+    'stylelint.config.cjs',
+    'stylelint.config.mjs',
+    'stylelint.config.js',
+  },
   parse = lint.from_json({
     get_diagnostics = function(...)
       return vim.json.decode(...)[1].warnings
