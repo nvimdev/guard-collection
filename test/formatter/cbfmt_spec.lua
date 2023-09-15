@@ -22,7 +22,7 @@ describe('cbfmt', function()
     assert.are.same({
       [[Normal text]],
       [[```lua]],
-      [[local a = "a"]],
+      [[local a = 'a']],
       [[```]],
     }, formatted)
   end)
