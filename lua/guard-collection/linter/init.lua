@@ -6,4 +6,5 @@ return {
   rubocop = require('guard-collection.linter.rubocop'),
   selene = require('guard-collection.linter.selene'),
   shellcheck = require('guard-collection.linter.shellcheck'),
+  stylelint = require('guard-collection.linter.stylelint'),
 }
