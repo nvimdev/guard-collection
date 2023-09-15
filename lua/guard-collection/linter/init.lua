@@ -1,5 +1,7 @@
 return {
   ['clang-tidy'] = require('guard-collection.linter.clang-tidy'),
+  codespell = require('guard-collection.linter.codespell'),
+  flake8 = require('guard-collection.linter.flake8'),
   hadolint = require('guard-collection.linter.hadolint'),
   luacheck = require('guard-collection.linter.luacheck'),
   pylint = require('guard-collection.linter.pylint'),
