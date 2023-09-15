@@ -1,5 +1,6 @@
 local M = {}
 local api = vim.api
+M.namespace = api.nvim_get_namespaces().Guard
 
 function M.test_with(ft, input)
   local bufnr = api.nvim_create_buf(true, false)

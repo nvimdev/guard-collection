@@ -1,10 +1,12 @@
 describe('luacheck', function()
   it('can lint', function()
+    local helper = require('test.linter.helper')
+    local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('lua'):lint('luacheck')
     require('guard').setup()
 
-    local diagnostics = require('test.linter.helper').test_with('lua', {
+    local diagnostics = helper.test_with('lua', {
       [[local M = {}]],
       [[function M.foo()]],
       [[  print("foo")]],
@@ -20,7 +22,7 @@ describe('luacheck', function()
         end_lnum = 4,
         lnum = 4,
         message = "accessing undefined variable 'U' [113]",
-        namespace = 4,
+        namespace = ns,
         severity = 2,
         source = 'luacheck',
       },

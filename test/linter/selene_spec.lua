@@ -1,10 +1,12 @@
 describe('selene', function()
   it('can lint', function()
+    local helper = require('test.linter.helper')
+    local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('lua'):lint('selene')
     require('guard').setup()
 
-    local diagnostics = require('test.linter.helper').test_with('lua', {
+    local diagnostics = helper.test_with('lua', {
       [[local M = {}]],
       [[function M.foo()]],
       [[  print("foo")]],
@@ -20,7 +22,7 @@ describe('selene', function()
         end_lnum = 4,
         lnum = 4,
         message = '`U` is not defined [undefined_variable]',
-        namespace = 4,
+        namespace = ns,
         severity = 1,
         source = 'selene',
       },

@@ -1,10 +1,12 @@
 describe('flake8', function()
   it('can lint', function()
+    local helper = require('test.linter.helper')
+    local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('flake8')
     require('guard').setup()
 
-    local diagnostics = require('test.linter.helper').test_with('python', {
+    local diagnostics = helper.test_with('python', {
       [[import os]],
       [[]],
       [[def foo(n):]],
@@ -20,7 +22,7 @@ describe('flake8', function()
         end_lnum = 0,
         lnum = 0,
         message = "'os' imported but unused [401]",
-        namespace = 1,
+        namespace = ns,
         severity = 3,
         source = 'flake8',
       },
@@ -31,7 +33,7 @@ describe('flake8', function()
         end_lnum = 2,
         lnum = 2,
         message = 'expected 2 blank lines, found 1 [302]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },
@@ -42,7 +44,7 @@ describe('flake8', function()
         end_lnum = 4,
         lnum = 4,
         message = 'indentation is not a multiple of 4 [111]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },
@@ -53,7 +55,7 @@ describe('flake8', function()
         end_lnum = 4,
         lnum = 4,
         message = 'over-indented [117]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },
@@ -64,7 +66,7 @@ describe('flake8', function()
         end_lnum = 4,
         lnum = 4,
         message = 'multiple spaces after keyword [271]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },
@@ -75,7 +77,7 @@ describe('flake8', function()
         end_lnum = 4,
         lnum = 4,
         message = "undefined name 'bar' [821]",
-        namespace = 1,
+        namespace = ns,
         severity = 3,
         source = 'flake8',
       },
@@ -86,7 +88,7 @@ describe('flake8', function()
         end_lnum = 5,
         lnum = 5,
         message = 'expected 2 blank lines after class or function definition, found 0 [305]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },
@@ -97,7 +99,7 @@ describe('flake8', function()
         end_lnum = 5,
         lnum = 5,
         message = 'line too long (80 > 79 characters) [501]',
-        namespace = 1,
+        namespace = ns,
         severity = 1,
         source = 'flake8',
       },

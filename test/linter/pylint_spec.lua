@@ -1,10 +1,12 @@
 describe('pylint', function()
   it('can lint', function()
+    local helper = require('test.linter.helper')
+    local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('pylint')
     require('guard').setup()
 
-    local diagnostics = require('test.linter.helper').test_with('python', {
+    local diagnostics = helper.test_with('python', {
       [[def foo(n):]],
       [[    if n in (1, 2, 3):]],
       [[        return n + 1]],
@@ -20,7 +22,7 @@ describe('pylint', function()
         end_lnum = 0,
         lnum = 0,
         message = 'Missing module docstring [missing-module-docstring]',
-        namespace = 4,
+        namespace = ns,
         severity = 3,
         source = 'pylint',
       },
@@ -31,7 +33,7 @@ describe('pylint', function()
         end_lnum = 0,
         lnum = 0,
         message = 'Missing function or method docstring [missing-function-docstring]',
-        namespace = 4,
+        namespace = ns,
         severity = 3,
         source = 'pylint',
       },
@@ -42,7 +44,7 @@ describe('pylint', function()
         end_lnum = 0,
         lnum = 0,
         message = 'Disallowed name "foo" [disallowed-name]',
-        namespace = 4,
+        namespace = ns,
         severity = 3,
         source = 'pylint',
       },
@@ -53,7 +55,7 @@ describe('pylint', function()
         end_lnum = 0,
         lnum = 0,
         message = 'Argument name "n" doesn\'t conform to snake_case naming style [invalid-name]',
-        namespace = 4,
+        namespace = ns,
         severity = 3,
         source = 'pylint',
       },
@@ -64,7 +66,7 @@ describe('pylint', function()
         end_lnum = 0,
         lnum = 0,
         message = 'Either all return statements in a function should return an expression, or none of them should. [inconsistent-return-statements]',
-        namespace = 4,
+        namespace = ns,
         severity = 3,
         source = 'pylint',
       },

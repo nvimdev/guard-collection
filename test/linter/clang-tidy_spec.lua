@@ -1,10 +1,12 @@
 describe('clang-tidy', function()
   it('can lint', function()
+    local helper = require('test.linter.helper')
+    local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('c'):lint('clang-tidy')
     require('guard').setup()
 
-    local diagnostics = require('test.linter.helper').test_with('c', {
+    local diagnostics = helper.test_with('c', {
       [[#include <stdio.h>]],
       [[int main() {]],
       [[    int x = 10;]],
@@ -22,7 +24,7 @@ describe('clang-tidy', function()
         end_lnum = 4,
         lnum = 4,
         message = 'Division by zero [clang-analyzer-core.DivideZero]',
-        namespace = 1,
+        namespace = ns,
         severity = 2,
         source = 'clang-tidy',
       },
