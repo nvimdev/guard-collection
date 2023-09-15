@@ -36,10 +36,11 @@ M.djhtml = {
 }
 
 M.dprint = {
-  cmd = "dprint",
-  args = { "fmt", "--stdin" },
+  cmd = 'dprint',
+  args = { 'fmt', '--stdin' },
   stdin = true,
   fname = true,
+  find = { 'dprint.json', 'dprint.jsonc', '.dprint.json', '.dprint.jsonc' },
 }
 
 M.fish_indent = {
