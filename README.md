@@ -26,10 +26,10 @@
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [rustfmt](https://github.com/rust-lang/rustfmt)
 - [ ] [shfmt](https://github.com/mvdan/sh)
-- [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
-- [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
-- [ ] [swift-format](https://github.com/apple/swift-format)
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
+- [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
+- [ ] [swift-format](https://github.com/apple/swift-format)
+- [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 - [x] [yapf](https://github.com/google/yapf)
 
 ## Linters
@@ -40,7 +40,7 @@
 - [x] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [pylint](https://github.com/PyCQA/pylint)
-- [ ] [rubocop](https://github.com/rubocop/rubocop)
+- [x] [rubocop](https://github.com/rubocop/rubocop)
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
 
 ## License MIT

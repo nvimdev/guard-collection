@@ -5,13 +5,17 @@ CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/insta
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Install packages with package managers
 sudo apt-get install -qqq \
-    clang-format clang-tidy fish elixir &
+    clang-format \
+    clang-tidy \
+    elixir \
+    fish \
+    ruby &
 luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
 pip -qqq install autopep8 black djhtml flake8 isort pylint yapf &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
-gem install -q rubocop &
+gem install -q bundler rubocop &
 brew install \
     swiftformat swift-format hadolint google-java-format pgformatter fnlfmt # Block, homebrew takes the longest time
 
