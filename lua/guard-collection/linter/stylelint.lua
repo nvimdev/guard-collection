@@ -5,7 +5,7 @@ return {
   args = { '--formatter', 'json', '--stdin', '--stdin-filename' },
   stdin = true,
   fname = true,
-  fine = {
+  find = {
     '.stylelintrc',
     '.stylelintrc.cjs',
     '.stylelintrc.js',
