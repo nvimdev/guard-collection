@@ -15,7 +15,6 @@ describe('clang-tidy', function()
       [[    return 0;]],
       [[}]],
     })
-    vim.print(diagnostics)
     assert.are.same({
       {
         bufnr = 3,

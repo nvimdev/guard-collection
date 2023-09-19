@@ -1,5 +1,6 @@
 local M = {}
 local api = vim.api
+require('guard.lint')
 M.namespace = api.nvim_get_namespaces().Guard
 
 function M.test_with(ft, input)
