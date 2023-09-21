@@ -44,6 +44,7 @@
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
+- [x] [selene](https://github.com/Kampfkarren/selene)
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
 - [ ] [stylelint](https://stylelint.io/)
 
