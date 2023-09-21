@@ -9,7 +9,7 @@
 - `lsp` using `vim.lsp.buf.format`
 - [x] [autopep8](https://github.com/hhatto/autopep8)
 - [x] [black](https://github.com/psf/black)
-- [x] [cbfmt](https://github.com/lukas-reineke/cbfmt)
+- [ ] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
 - [ ] [dprint](https://dprint.dev/)
@@ -40,7 +40,7 @@
 - [ ] [eslint](https://eslint.org/)
 - [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [x] [flake8](https://github.com/PyCQA/flake8)
-- [x] [hadolint](https://github.com/hadolint/hadolint)
+- [ ] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
