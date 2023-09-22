@@ -151,4 +151,10 @@ M.yapf = {
   stdin = true,
 }
 
+M.zigfmt = {
+  cmd = 'zigfmt',
+  args = { 'fmt', '--stdin' },
+  stdin = true,
+}
+
 return M

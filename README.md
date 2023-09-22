@@ -32,6 +32,7 @@
 - [ ] [swift-format](https://github.com/apple/swift-format)
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
+- [x] [zigfmt](https://github.com/ziglang/zig)
 
 ## Linters
 
