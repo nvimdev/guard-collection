@@ -61,7 +61,7 @@ M.gofmt = {
 
 M.golines = {
   cmd = 'golines',
-  args = { '--max-len=80' },
+  args = { '--max-len=180' },
   stdin = true,
 }
 
