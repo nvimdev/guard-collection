@@ -11,6 +11,7 @@
 - [x] [black](https://github.com/psf/black)
 - [ ] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
+- [x] [csharpier](https://csharpier.com/)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
 - [ ] [dprint](https://dprint.dev/)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
