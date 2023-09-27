@@ -8,13 +8,13 @@ sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf &
+pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
 gem install -q rubocop &
+# Block, homebrew takes the longest time
 brew install \
-    # Block, homebrew takes the longest time
-    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ktlint ormolu
+    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu
 
 # Install standalone binary packages
 bin="/home/runner/.local/bin"
@@ -40,6 +40,10 @@ mv latexindent-linux $bin/latexindent
 wget -q "$gh/serokell/nixfmt/releases/download/v0.5.0/nixfmt"
 chmod +x nixfmt
 mv nixfmt $bin/nixfmt
+# ktlint
+wget -q https://github.com/pinterest/ktlint/releases/download/1.0.0/ktlint
+chmod +x ktlint 
+mv ktlint $bin/ktlint
 
 # test setup
 luarocks install vusted

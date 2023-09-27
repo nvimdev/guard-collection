@@ -11,7 +11,7 @@ function M.test_with(ft, input)
   -- To make linters happy
   vim.cmd('silent! write! /tmp/test.' .. ft)
   require('guard.lint').do_lint(bufnr)
-  vim.wait(5000)
+  vim.wait(3000)
   return vim.diagnostic.get(bufnr)
 end
 
