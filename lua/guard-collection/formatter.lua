@@ -102,6 +102,7 @@ M.nixfmt = {
 
 M.ormolu = {
   cmd = 'ormolu',
+  args = { '--color', 'never', '--stdin-input-file' },
   stdin = true,
   fname = true,
 }

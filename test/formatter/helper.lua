@@ -9,7 +9,7 @@ function M.test_with(ft, input)
   -- To provide fname
   vim.cmd('silent! write! /tmp/file.' .. ft)
   require('guard.format').do_fmt(bufnr)
-  vim.wait(5000)
+  vim.wait(3000)
   return api.nvim_buf_get_lines(bufnr, 0, -1, false)
 end
 

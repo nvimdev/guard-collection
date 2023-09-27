@@ -12,9 +12,10 @@ pip -qqq install autopep8 black djhtml flake8 isort pylint yapf &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
 gem install -q rubocop &
+# Block, homebrew takes the longest time
 brew install \
-    # Block, homebrew takes the longest time
     swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ktlint ormolu
+brew install ormolu
 
 # Install standalone binary packages
 bin="/home/runner/.local/bin"
