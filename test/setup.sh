@@ -49,5 +49,3 @@ mv ktlint $bin/ktlint
 luarocks install vusted
 git clone https://github.com/nvimdev/guard.nvim /home/runner/guard.nvim
 mv /home/runner/guard.nvim/lua/guard ./lua/
-
-ktlint --version
