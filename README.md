@@ -1,7 +1,7 @@
 # guard-collection
 
 - Collection of configuration for [guard.nvim](https://github.com/nvimdev/guard.nvim)
-- Feel free to open PRs! By adding your favourite dev tool, you are helping others that need it. You may find (this documentation)[https://github.com/nvimdev/guard-collection/blob/main/CONTRIBUTING.md] helpful.
+- Feel free to open PRs! By adding your favourite dev tool, you are helping others that need it. You may find [this documentation](https://github.com/nvimdev/guard-collection/blob/main/CONTRIBUTING.md) helpful.
 - Items with checkbox unchecked are supported but don't have a test yet. (help wanted!)
 
 ## Formatters
