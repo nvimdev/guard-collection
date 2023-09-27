@@ -5,6 +5,7 @@ return {
   eslint_d = require('guard-collection.linter.eslint_d'),
   flake8 = require('guard-collection.linter.flake8'),
   hadolint = require('guard-collection.linter.hadolint'),
+  ktlint = require('guard-collection.linter.ktlint'),
   luacheck = require('guard-collection.linter.luacheck'),
   pylint = require('guard-collection.linter.pylint'),
   rubocop = require('guard-collection.linter.rubocop'),

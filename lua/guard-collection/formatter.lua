@@ -77,6 +77,12 @@ M.isort = {
   stdin = true,
 }
 
+M.ktlint = {
+  cmd = 'ktlint',
+  args = { '-F', '--stdin', '--log-level=error' },
+  stdin = true,
+}
+
 M.latexindent = {
   cmd = 'latexindent',
   stdin = true,
@@ -92,6 +98,12 @@ M.mixformat = {
 M.nixfmt = {
   cmd = 'nixfmt',
   stdin = true,
+}
+
+M.ormolu = {
+  cmd = 'ormolu',
+  stdin = true,
+  fname = true,
 }
 
 M.pg_format = {

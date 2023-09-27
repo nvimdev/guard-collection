@@ -1,8 +1,8 @@
 # guard-collection
 
 - Collection of configuration for [guard.nvim](https://github.com/nvimdev/guard.nvim)
-- Feel free to open PRs! By adding your favourite dev tool, you are helping others that need it.
-- Most of the tools don't have tests (checkbox unchecked), if you happen to use one of them, consider adding one ;)
+- Feel free to open PRs! By adding your favourite dev tool, you are helping others that need it. You may find (this documentation helpful)[https://github.com/nvimdev/guard-collection/blob/main/CONTRIBUTING.md]
+- Items with checkbox unchecked are supported but don't have a test yet (help wanted!)
 
 ## Formatters
 
@@ -19,9 +19,11 @@
 - [ ] [golines](https://pkg.go.dev/github.com/segmentio/golines)
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
+- [x] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
 - [ ] [mixformat](https://github.com/elixir-lang/elixir/)
 - [ ] [nixfmt](https://github.com/serokell/nixfmt)
+- [x] [ormolu](https://hackage.haskell.org/package/ormolu)
 - [ ] [pg_format](https://github.com/darold/pgFormatter)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
@@ -41,6 +43,7 @@
 - [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [x] [flake8](https://github.com/PyCQA/flake8)
 - [ ] [hadolint](https://github.com/hadolint/hadolint)
+- [x] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
