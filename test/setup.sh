@@ -8,14 +8,13 @@ sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf &
+pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
 gem install -q rubocop &
 # Block, homebrew takes the longest time
 brew install \
     swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ktlint ormolu
-brew install ormolu
 
 # Install standalone binary packages
 bin="/home/runner/.local/bin"
@@ -46,3 +45,5 @@ mv nixfmt $bin/nixfmt
 luarocks install vusted
 git clone https://github.com/nvimdev/guard.nvim /home/runner/guard.nvim
 mv /home/runner/guard.nvim/lua/guard ./lua/
+
+ktlint --version

@@ -23,7 +23,7 @@
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
 - [ ] [mixformat](https://github.com/elixir-lang/elixir/)
 - [ ] [nixfmt](https://github.com/serokell/nixfmt)
-- [x] [ormolu](https://hackage.haskell.org/package/ormolu)
+- [ ] [ormolu](https://hackage.haskell.org/package/ormolu)
 - [ ] [pg_format](https://github.com/darold/pgFormatter)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
