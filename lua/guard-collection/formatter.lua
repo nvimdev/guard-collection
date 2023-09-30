@@ -164,4 +164,10 @@ M.yapf = {
   stdin = true,
 }
 
+M.ruff = {
+  cmd = 'ruff',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
 return M
