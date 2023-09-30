@@ -34,7 +34,9 @@
 - [ ] [swift-format](https://github.com/apple/swift-format)
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
-- [x] [ruff](https://github.com/astral-sh/ruff)
+- [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
+- [x] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
+
 
 ## Linters
 
