@@ -34,6 +34,7 @@
 - [ ] [swift-format](https://github.com/apple/swift-format)
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
+- [x] [ruff](https://github.com/astral-sh/ruff)
 
 ## Linters
 
@@ -50,5 +51,6 @@
 - [x] [selene](https://github.com/Kampfkarren/selene)
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
 - [ ] [stylelint](https://stylelint.io/)
+- [x] [ruff](https://github.com/astral-sh/ruff)
 
 ## License MIT
