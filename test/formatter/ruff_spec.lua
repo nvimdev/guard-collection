@@ -17,8 +17,7 @@ describe('ruff', function()
       [[    if n in (1, 2, 3):]],
       [[        return n + 1]],
       [[]],
-      [[]],
-      [[a, b = 1, 2]],
+      [[a, b = (1, 2)]],
       [[b, a = a, b]],
       [[print(f"The factorial of {a} is: {foo(a)}")]],
     }, formatted)
