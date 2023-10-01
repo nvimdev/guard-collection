@@ -13,43 +13,40 @@ describe('ruff', function()
       [[    return n + 1]],
       [[  a, b = 1, 2]],
     })
-    assert.are.same(
+    assert.are.same({
       {
-        {
-          bufnr = 1,
-          col = 7,
-          end_col = 7,
-          end_lnum = 0,
-          lnum = 0,
-          message = '`os` imported but unused [F401]',
-          namespace = 5,
-          severity = 1,
-          source = 'ruff',
-        },
-        {
-          bufnr = 1,
-          col = 4,
-          end_col = 4,
-          end_lnum = 6,
-          lnum = 6,
-          message = 'Local variable `a` is assigned to but never used [F841]',
-          namespace = 5,
-          severity = 1,
-          source = 'ruff',
-        },
-        {
-          bufnr = 1,
-          col = 7,
-          end_col = 7,
-          end_lnum = 6,
-          lnum = 6,
-          message = 'Local variable `b` is assigned to but never used [F841]',
-          namespace = 5,
-          severity = 1,
-          source = 'ruff',
-        },
+        bufnr = 3,
+        col = 7,
+        end_col = 7,
+        end_lnum = 0,
+        lnum = 0,
+        message = '`os` imported but unused [F401]',
+        namespace = 1,
+        severity = 1,
+        source = 'ruff',
       },
-      diagnostics
-    )
+      {
+        bufnr = 3,
+        col = 2,
+        end_col = 2,
+        end_lnum = 4,
+        lnum = 4,
+        message = 'Local variable `a` is assigned to but never used [F841]',
+        namespace = 1,
+        severity = 1,
+        source = 'ruff',
+      },
+      {
+        bufnr = 3,
+        col = 5,
+        end_col = 5,
+        end_lnum = 4,
+        lnum = 4,
+        message = 'Local variable `b` is assigned to but never used [F841]',
+        namespace = 1,
+        severity = 1,
+        source = 'ruff',
+      },
+    }, diagnostics)
   end)
 end)
