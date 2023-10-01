@@ -164,4 +164,17 @@ M.yapf = {
   stdin = true,
 }
 
+M.ruff = {
+  cmd = 'ruff',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
+M.ruff_fix = {
+  cmd = 'ruff',
+  args = { '--fix', '-', '--stdin-filename' },
+  stdin = true,
+  fname = true,
+}
+
 return M

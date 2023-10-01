@@ -12,4 +12,5 @@ return {
   selene = require('guard-collection.linter.selene'),
   shellcheck = require('guard-collection.linter.shellcheck'),
   stylelint = require('guard-collection.linter.stylelint'),
+  ruff = require('guard-collection.linter.ruff'),
 }
