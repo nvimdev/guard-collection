@@ -11,10 +11,10 @@ describe('taplo', function()
       [[anyhow     = "1" ]],
       [[tracing-error =     "0.2" ]],
       [[]],
-      [[]]
+      [[]],
     })
     assert.are.same({
-      "[dependencies]",
+      '[dependencies]',
       [[async-process = "^1.7"]],
       [[strum = { version = "^0.25", features = ["derive"] }]],
       [[anyhow = "1"]],
