@@ -29,6 +29,12 @@ M['clang-format'] = {
   stdin = true,
 }
 
+M.csharpier = {
+  cmd = 'dotnet-csharpier',
+  args = { '--write-stdout' },
+  stdin = true,
+}
+
 M.djhtml = {
   cmd = 'djhtml',
   args = { '-' },
