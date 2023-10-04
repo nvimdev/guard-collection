@@ -43,6 +43,13 @@ M.dprint = {
   find = { 'dprint.json', 'dprint.jsonc', '.dprint.json', '.dprint.jsonc' },
 }
 
+M.eslint_d = {
+  cmd = 'eslint_d',
+  args = { '--fix-to-stdout', '--stdin', '--stdin-filename' },
+  fname = true,
+  stdin = true,
+}
+
 M.fish_indent = {
   cmd = 'fish_indent',
   stdin = true,

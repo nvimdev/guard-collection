@@ -13,6 +13,7 @@
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
 - [ ] [dprint](https://dprint.dev/)
+- [x] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
 - [ ] [gofmt](https://pkg.go.dev/cmd/gofmt)
