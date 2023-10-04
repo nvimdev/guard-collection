@@ -196,4 +196,10 @@ M.ruff_fix = {
   fname = true,
 }
 
+M.zigfmt = {
+  cmd = 'zig',
+  args = { 'fmt', '--stdin' },
+  stdin = true,
+}
+
 return M

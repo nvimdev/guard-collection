@@ -39,6 +39,7 @@
 - [x] [yapf](https://github.com/google/yapf)
 - [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
 - [x] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
+- [ ] [zigfmt](https://github.com/ziglang/zig)
 
 ## Linters
 
