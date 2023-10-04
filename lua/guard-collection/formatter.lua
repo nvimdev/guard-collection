@@ -132,6 +132,12 @@ M.rustfmt = {
   stdin = true,
 }
 
+M.taplo = {
+  cmd = 'taplo',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
 M.shfmt = {
   cmd = 'shfmt',
   stdin = true,

@@ -28,6 +28,7 @@
 - [x] [prettier](https://github.com/prettier/prettier)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [rustfmt](https://github.com/rust-lang/rustfmt)
+- [x] [taplo](https://github.com/tamasfe/taplo)
 - [ ] [shfmt](https://github.com/mvdan/sh)
 - [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
@@ -36,7 +37,6 @@
 - [x] [yapf](https://github.com/google/yapf)
 - [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
 - [x] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
-
 
 ## Linters
 
