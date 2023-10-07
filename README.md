@@ -11,8 +11,10 @@
 - [x] [black](https://github.com/psf/black)
 - [ ] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
+- [x] [csharpier](https://csharpier.com/)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
 - [ ] [dprint](https://dprint.dev/)
+- [x] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
 - [ ] [gofmt](https://pkg.go.dev/cmd/gofmt)
@@ -29,15 +31,18 @@
 - [x] [prettier](https://github.com/prettier/prettier)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [rustfmt](https://github.com/rust-lang/rustfmt)
+- [x] [taplo](https://github.com/tamasfe/taplo)
 - [ ] [shfmt](https://github.com/mvdan/sh)
 - [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 - [ ] [swift-format](https://github.com/apple/swift-format)
+- [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff) as `sqlfluff format`
+- [x] [sqlfluff_fix](https://github.com/sqlfluff/sqlfluff) as `sqlfluff fix`
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
 - [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
 - [x] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
-
+- [ ] [zigfmt](https://github.com/ziglang/zig)
 
 ## Linters
 
@@ -49,6 +54,7 @@
 - [ ] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
+- [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [selene](https://github.com/Kampfkarren/selene)

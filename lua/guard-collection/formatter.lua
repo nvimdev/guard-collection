@@ -29,6 +29,12 @@ M['clang-format'] = {
   stdin = true,
 }
 
+M.csharpier = {
+  cmd = 'dotnet-csharpier',
+  args = { '--write-stdout' },
+  stdin = true,
+}
+
 M.djhtml = {
   cmd = 'djhtml',
   args = { '-' },
@@ -41,6 +47,13 @@ M.dprint = {
   stdin = true,
   fname = true,
   find = { 'dprint.json', 'dprint.jsonc', '.dprint.json', '.dprint.jsonc' },
+}
+
+M.eslint_d = {
+  cmd = 'eslint_d',
+  args = { '--fix-to-stdout', '--stdin', '--stdin-filename' },
+  fname = true,
+  stdin = true,
 }
 
 M.fish_indent = {
@@ -137,6 +150,12 @@ M.rustfmt = {
   stdin = true,
 }
 
+M.taplo = {
+  cmd = 'taplo',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
 M.shfmt = {
   cmd = 'shfmt',
   stdin = true,
@@ -155,6 +174,18 @@ M.swiftformat = {
 
 M['swift-format'] = {
   cmd = 'swift-format',
+  stdin = true,
+}
+
+M.sqlfluff = {
+  cmd = 'sqlfluff',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
+M.sqlfluff_fix = {
+  cmd = 'sqlfluff',
+  args = { 'fix', '-' },
   stdin = true,
 }
 
@@ -180,6 +211,12 @@ M.ruff_fix = {
   args = { '--fix', '-', '--stdin-filename' },
   stdin = true,
   fname = true,
+}
+
+M.zigfmt = {
+  cmd = 'zig',
+  args = { 'fmt', '--stdin' },
+  stdin = true,
 }
 
 return M

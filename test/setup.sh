@@ -7,10 +7,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
-go install github.com/segmentio/golines@latest mvdan.cc/gofumpt@latest &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff &
+go install github.com/segmentio/golines@latest &
+pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff &
 npm install -g --silent \
-    prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
+    prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
 gem install -q rubocop &
 # Block, homebrew takes the longest time
 brew install \
