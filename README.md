@@ -18,6 +18,7 @@
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
 - [ ] [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [x] [gofumpt](https://pkg.go.dev/mvdan.cc/gofumpt)
 - [ ] [golines](https://pkg.go.dev/github.com/segmentio/golines)
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
