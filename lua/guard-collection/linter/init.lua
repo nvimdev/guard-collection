@@ -7,6 +7,7 @@ return {
   hadolint = require('guard-collection.linter.hadolint'),
   ktlint = require('guard-collection.linter.ktlint'),
   luacheck = require('guard-collection.linter.luacheck'),
+  sqlfluff = require('guard-collection.linter.sqlfluff'),
   pylint = require('guard-collection.linter.pylint'),
   rubocop = require('guard-collection.linter.rubocop'),
   selene = require('guard-collection.linter.selene'),
