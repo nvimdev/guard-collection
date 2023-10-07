@@ -119,6 +119,12 @@ M.prettier = {
   stdin = true,
 }
 
+M.prettierd = {
+  cmd = 'prettierd',
+  fname = true,
+  stdin = true,
+}
+
 M.rubocop = {
   cmd = 'bundle',
   args = { 'exec', 'rubocop', '-A', '-f', 'quiet', '--stderr', '--stdin' },
