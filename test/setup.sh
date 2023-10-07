@@ -7,7 +7,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
-go install github.com/segmentio/golines@latest &
+go install github.com/segmentio/golines@latest mvdan.cc/gofumpt@latest &
 pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt &
