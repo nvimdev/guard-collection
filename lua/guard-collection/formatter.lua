@@ -172,6 +172,18 @@ M['swift-format'] = {
   stdin = true,
 }
 
+M.sqlfluff = {
+  cmd = 'sqlfluff',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
+M.sqlfluff_fix = {
+  cmd = 'sqlfluff',
+  args = { 'fix', '-' },
+  stdin = true,
+}
+
 M['sql-formatter'] = {
   cmd = 'sql-formatter',
   stdin = true,

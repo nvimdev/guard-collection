@@ -35,6 +35,8 @@
 - [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 - [ ] [swift-format](https://github.com/apple/swift-format)
+- [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff) as `sqlfluff format`
+- [x] [sqlfluff_fix](https://github.com/sqlfluff/sqlfluff) as `sqlfluff fix`
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
 - [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
@@ -51,6 +53,7 @@
 - [ ] [hadolint](https://github.com/hadolint/hadolint)
 - [x] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
+- [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [selene](https://github.com/Kampfkarren/selene)
