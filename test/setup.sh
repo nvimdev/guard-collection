@@ -14,7 +14,7 @@ npm install -g --silent \
 gem install -q rubocop &
 # Block, homebrew takes the longest time
 brew install \
-    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu
+    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu golangci-lint
 
 # Install standalone binary packages
 bin="/home/runner/.local/bin"
