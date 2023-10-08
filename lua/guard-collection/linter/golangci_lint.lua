@@ -29,8 +29,8 @@ return {
           diags,
           lint.diag_fmt(
             bufnr,
-            d.Pos.Line,
-            d.Pos.Column,
+            d.Pos.Line > 0 and d.Pos.Line - 1 or 0,
+            d.Pos.Column > 0 and d.Pos.Column - 1 or 0,
             d.Text,
             severities[d.Severity] or lint.severities.warning,
             string.format('golangci-lint: %s', d.FromLinter)
