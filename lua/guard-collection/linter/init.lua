@@ -4,6 +4,7 @@ return {
   eslint = require('guard-collection.linter.eslint'),
   eslint_d = require('guard-collection.linter.eslint_d'),
   flake8 = require('guard-collection.linter.flake8'),
+  golangci_lint = require('guard-collection.linter.golangci_lint'),
   hadolint = require('guard-collection.linter.hadolint'),
   ktlint = require('guard-collection.linter.ktlint'),
   luacheck = require('guard-collection.linter.luacheck'),
