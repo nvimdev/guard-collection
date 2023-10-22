@@ -15,4 +15,7 @@ return {
   shellcheck = require('guard-collection.linter.shellcheck'),
   stylelint = require('guard-collection.linter.stylelint'),
   ruff = require('guard-collection.linter.ruff'),
+  mypy = require('guard-collection.linter.mypy').mypy,
+  mypyc = require('guard-collection.linter.mypy').mypyc,
+  dmypy = require('guard-collection.linter.mypy').dmypy,
 }
