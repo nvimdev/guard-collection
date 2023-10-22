@@ -5,7 +5,7 @@ return {
   args = {
     '-n',
     '-e',
-    '--format',
+    '--output-format',
     'json',
     '-',
     '--stdin-filename',
