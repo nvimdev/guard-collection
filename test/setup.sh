@@ -8,13 +8,14 @@ sudo apt-get install -qqq \
     clang-format clang-tidy fish elixir &
 luarocks install luacheck &
 go install github.com/segmentio/golines@latest &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff &
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.0 &
+pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff mypy &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
 gem install -q rubocop &
 # Block, homebrew takes the longest time
 brew install \
-    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu golangci-lint
+    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu
 
 # Install standalone binary packages
 bin="/home/runner/.local/bin"

@@ -61,5 +61,8 @@
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
 - [ ] [stylelint](https://stylelint.io/)
 - [x] [ruff](https://github.com/astral-sh/ruff)
+- [x] [mypy](https://mypy.readthedocs.io/en/stable/index.html)
+- [x] [mypyc](https://mypyc.readthedocs.io/en/latest/index.html)
+- [x] [dmypy](https://mypy.readthedocs.io/en/stable/mypy_daemon.html)
 
 ## License MIT
