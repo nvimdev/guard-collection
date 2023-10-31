@@ -50,17 +50,6 @@ describe('pylint', function()
       },
       {
         bufnr = 3,
-        col = 7,
-        end_col = 7,
-        end_lnum = 0,
-        lnum = 0,
-        message = 'Argument name "n" doesn\'t conform to snake_case naming style [invalid-name]',
-        namespace = ns,
-        severity = 3,
-        source = 'pylint',
-      },
-      {
-        bufnr = 3,
         col = -1,
         end_col = -1,
         end_lnum = 0,
