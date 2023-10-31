@@ -4,22 +4,20 @@ sudo apt-get install -qqq build-essential
 CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Install packages with package managers
-sudo apt-get install -qqq \
-    clang-format clang-tidy fish elixir &
 luarocks install luacheck &
-go install github.com/segmentio/golines@latest &
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.0 &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff mypy &
+pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff clang-tidy mypy &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
 gem install -q rubocop &
-# Block, homebrew takes the longest time
 brew install \
-    swiftformat swift-format hadolint google-java-format pgformatter fnlfmt ormolu
+    hadolint fnlfmt ormolu clang-format golines golangci-lint gofumpt &
+# special setup
+export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
 # Install standalone binary packages
-bin="/home/runner/.local/bin"
+bin="$HOME/.local/bin"
 gh="https://github.com"
+mkdir -p $bin
 # cbfmt
 wget -q $gh"/lukas-reineke/cbfmt/releases/download/v0.2.0/cbfmt_linux-x86_64_v0.2.0.tar.gz"
 tar -xvf cbfmt_linux-x86_64_v0.2.0.tar.gz
@@ -47,6 +45,8 @@ chmod +x ktlint
 mv ktlint $bin/ktlint
 
 # test setup
+export PATH="$HOME/.local/bin:$PATH"
 luarocks install vusted
-git clone https://github.com/nvimdev/guard.nvim /home/runner/guard.nvim
-mv /home/runner/guard.nvim/lua/guard ./lua/
+git clone https://github.com/nvimdev/guard.nvim $HOME/guard.nvim
+mv $HOME/guard.nvim/lua/guard ./lua/
+wait

@@ -4,6 +4,8 @@ require('guard.lint')
 M.namespace = api.nvim_get_namespaces().Guard
 
 function M.test_with(ft, input)
+  local cmd = require('guard.filetype')(ft).linter[1].cmd
+  assert(vim.fn.executable(cmd) == 1)
   local bufnr = api.nvim_create_buf(true, false)
   vim.bo[bufnr].filetype = ft
   api.nvim_set_current_buf(bufnr)

@@ -26,8 +26,7 @@ jobs:
         with:
           neovim: true
           version: nightly
-      - name: luajit
-        uses: leafo/gh-actions-lua@v10
+      - uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: "luajit-2.1.0-beta3"
       - uses: leafo/gh-actions-luarocks@v4
@@ -39,9 +38,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - uses: actions/setup-go@v4
-        with:
-          go-version: "1.20.7"
       - uses: ruby/setup-ruby-pkgs@v1
         with:
           ruby-version: "3.2"
@@ -50,11 +46,14 @@ jobs:
         run: bash ./test/setup.sh
       - name: formatter test
         shell: bash
-        run: vusted ./test/formatter
+        run: |
+          source ./test/env.sh
+          vusted ./test/formatter
       - name: linter test
         shell: bash
         if: always()
         run: |
+          source ./test/env.sh
           for linter_test in ./test/linter/*_spec.lua; do
               vusted $linter_test
           done
