@@ -17,9 +17,9 @@
 - [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
-- [ ] [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [x] [gofmt](https://pkg.go.dev/cmd/gofmt)
 - [x] [gofumpt](https://pkg.go.dev/mvdan.cc/gofumpt)
-- [ ] [golines](https://pkg.go.dev/github.com/segmentio/golines)
+- [x] [golines](https://pkg.go.dev/github.com/segmentio/golines)
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
@@ -40,7 +40,7 @@
 - [x] [sqlfluff_fix](https://github.com/sqlfluff/sqlfluff) as `sqlfluff fix`
 - [x] [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
 - [x] [yapf](https://github.com/google/yapf)
-- [ ] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
+- [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
 - [ ] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
 - [ ] [zigfmt](https://github.com/ziglang/zig)
 
@@ -51,6 +51,7 @@
 - [ ] [eslint](https://eslint.org/)
 - [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [x] [flake8](https://github.com/PyCQA/flake8)
+- [ ] [golangci-lint](https://github.com/golangci/golangci-lint)
 - [ ] [hadolint](https://github.com/hadolint/hadolint)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
