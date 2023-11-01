@@ -99,6 +99,8 @@ ln -s ~/.local/share/nvim/lazy/guard.nvim/lua/guard lua
   ok 1 - <tool-name> can format
   ok 1 - <tool-name> can lint
   ```
+  
+- Modify `test/setup.sh` so that CI installs your tool
 
 - Optionally, format the code with stylua
   ```shell
