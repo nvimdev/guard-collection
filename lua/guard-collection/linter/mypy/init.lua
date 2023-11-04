@@ -10,6 +10,7 @@ local args = {
   '--show-error-end',
   '--no-error-summary',
   '--no-pretty',
+  '--follow-imports=silent',
 }
 
 local unpack = table.unpack or unpack
