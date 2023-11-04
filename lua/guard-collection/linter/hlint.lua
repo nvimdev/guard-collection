@@ -14,20 +14,18 @@ return {
     local diags = {}
 
     result = result ~= '' and vim.json.decode(result) or {}
-    if type(result) == 'table' then
-      for _, d in ipairs(result) do
-        table.insert(
-          diags,
-          lint.diag_fmt(
-            bufnr,
-            d.startLine > 0 and d.startLine - 1 or 0,
-            d.startLine > 0 and d.startColumn - 1 or 0,
-            d.hint .. (d.to ~= vim.NIL and (': ' .. d.to) or ''),
-            severities[d.severity:lower()],
-            'hlint'
-          )
+    for _, d in ipairs(result) do
+      table.insert(
+        diags,
+        lint.diag_fmt(
+          bufnr,
+          d.startLine > 0 and d.startLine - 1 or 0,
+          d.startLine > 0 and d.startColumn - 1 or 0,
+          d.hint .. (d.to ~= vim.NIL and (': ' .. d.to) or ''),
+          severities[d.severity:lower()],
+          'hlint'
         )
-      end
+      )
     end
 
     return diags
