@@ -6,6 +6,7 @@ return {
   flake8 = require('guard-collection.linter.flake8'),
   golangci_lint = require('guard-collection.linter.golangci_lint'),
   hadolint = require('guard-collection.linter.hadolint'),
+  hlint = require('guard-collection.linter.hlint'),
   ktlint = require('guard-collection.linter.ktlint'),
   luacheck = require('guard-collection.linter.luacheck'),
   sqlfluff = require('guard-collection.linter.sqlfluff'),

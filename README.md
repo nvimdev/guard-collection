@@ -53,6 +53,7 @@
 - [x] [flake8](https://github.com/PyCQA/flake8)
 - [ ] [golangci-lint](https://github.com/golangci/golangci-lint)
 - [ ] [hadolint](https://github.com/hadolint/hadolint)
+- [x] [hlint](https://github.com/ndmitchell/hlint)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
 - [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff)
