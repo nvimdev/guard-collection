@@ -10,7 +10,7 @@ npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
 gem install -q rubocop &
 brew install \
-    hadolint fnlfmt hlint ormolu clang-format golines golangci-lint gofumpt &
+    hadolint fnlfmt hlint ormolu clang-format golines golangci-lint gofumpt detekt &
 # special setup
 export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
