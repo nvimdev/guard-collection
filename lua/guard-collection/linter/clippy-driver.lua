@@ -6,7 +6,7 @@ end
 
 return {
   cmd = 'clippy-driver',
-  args = { '-', '--error-format=json', '--edition=2021' }, -- --edition-2021 is a mandatory, probably need a way to check Cargo.toml and get info from there
+  args = { '-', '--error-format=json', '--edition=2021' },
   stdin = true,
   parse = lint.from_json({
     get_diagnostics = function(result, bufnr)
@@ -23,8 +23,11 @@ return {
       code = function(json)
         -- concat all 'spans.text[n].text'
         local str = ''
-        for _, v in pairs(json.spans.text) do
-          str = str .. trim(v.text) .. ';'
+        for k, v in pairs(json.spans.text) do
+          str = str .. trim(v.text)
+          if k ~= #(json.spans.text) then -- add " | " if current iteration is not last
+            str = str .. ' | '
+          end
         end
         return str
       end,
