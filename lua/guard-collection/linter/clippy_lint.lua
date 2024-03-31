@@ -1,12 +1,12 @@
 local lint = require('guard.lint')
 
-local function string.trim(s)
-  return s:gsub("^%s*(.-)%s*$", "%1")
+local function trim(s)
+  return s:gsub('^%s*(.-)%s*$', '%1')
 end
 
 return {
   cmd = 'clippy-driver',
-  args = { '-', '--error-format=json', '--edition=2021' } -- --edition-2021 is a mandatory, probably need a way to check Cargo.toml and get info from there
+  args = { '-', '--error-format=json', '--edition=2021' }, -- --edition-2021 is a mandatory, probably need a way to check Cargo.toml and get info from there
   stdin = true,
   parse = lint.from_json({
     get_diagnostics = function(result, bufnr)
@@ -14,7 +14,7 @@ return {
       if result == '' then
         return diags
       end
-      res = "{" .. result:gsub("({[^\n]+})\n", "%1,\n") .. "}"
+      res = '{' .. result:gsub('({[^\n]+})\n', '%1,\n') .. '}'
       return vim.json.decode(res)
     end,
     attributes = {
@@ -22,9 +22,9 @@ return {
       end_lnum = 'spans.line_end',
       code = function(json)
         -- concat all 'spans.text[n].text'
-        local str = ""
-        for k,v in pairs(json.spans.text) do
-            str = str .. v.text:trim() .. ";"
+        local str = ''
+        for k, v in pairs(json.spans.text) do
+          str = str .. trim(v.text) .. ';'
         end
         return str
       end,
