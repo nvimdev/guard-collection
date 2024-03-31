@@ -25,7 +25,7 @@ return {
         local str = ''
         for k, v in pairs(json.spans.text) do
           str = str .. trim(v.text)
-          if k ~= #(json.spans.text) then -- add " | " if current iteration is not last
+          if k ~= #json.spans.text then -- add " | " if current iteration is not last
             str = str .. ' | '
           end
         end
