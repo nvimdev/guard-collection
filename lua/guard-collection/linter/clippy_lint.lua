@@ -19,7 +19,7 @@ return {
         -- concat all 'spans.text[n].text'
         local str = ""
         for k,v in pairs(json.spans.text) do
-            str = str .. v.text:trim() .. ";"
+            str = str .. v.text:trim() .. " | "
         end
         return str
       end,
