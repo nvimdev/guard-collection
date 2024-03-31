@@ -9,8 +9,13 @@ return {
   args = { '-', '--error-format=json', '--edition=2021' } -- --edition-2021 is a mandatory, probably need a way to check Cargo.toml and get info from there
   stdin = true,
   parse = lint.from_json({
-    get_diagnostics = function(...)
-      error(...)
+    get_diagnostics = function(result, bufnr)
+      local diags = {}
+      if result == '' then
+        return diags
+      end
+      res = "{" .. result:gsub("({[^\n]+})\n", "%1,\n") .. "}"
+      return vim.json.decode(res)
     end,
     attributes = {
       lnum = 'spans.line_start',
@@ -19,7 +24,7 @@ return {
         -- concat all 'spans.text[n].text'
         local str = ""
         for k,v in pairs(json.spans.text) do
-            str = str .. v.text:trim() .. " | "
+            str = str .. v.text:trim() .. ";"
         end
         return str
       end,
