@@ -67,6 +67,6 @@
 - [x] [mypy](https://mypy.readthedocs.io/en/stable/index.html)
 - [x] [mypyc](https://mypyc.readthedocs.io/en/latest/index.html)
 - [x] [dmypy](https://mypy.readthedocs.io/en/stable/mypy_daemon.html)
-- [x] [clippy](https://github.com/rust-lang/rust-clippy)
+- [x] [clippy-driver](https://github.com/rust-lang/rust-clippy)
 
 ## License MIT

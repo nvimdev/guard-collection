@@ -14,7 +14,7 @@ return {
       if result == '' then
         return diags
       end
-      res = '{' .. result:gsub('({[^\n]+})\n', '%1,\n') .. '}'
+      local res = '{' .. result:gsub('({[^\n]+})\n', '%1,\n') .. '}'
       return vim.json.decode(res)
     end,
     attributes = {
@@ -23,7 +23,7 @@ return {
       code = function(json)
         -- concat all 'spans.text[n].text'
         local str = ''
-        for k, v in pairs(json.spans.text) do
+        for _, v in pairs(json.spans.text) do
           str = str .. trim(v.text) .. ';'
         end
         return str
