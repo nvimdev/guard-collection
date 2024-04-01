@@ -10,9 +10,8 @@ return {
   stdin = true,
   parse = lint.from_json({
     get_diagnostics = function(result, bufnr)
-      local diags = {}
       if result == '' then
-        return diags
+        return {}
       end
       local res = '{' .. result:gsub('({[^\n]+})\n', '%1,\n') .. '}'
       return vim.json.decode(res)
