@@ -22,7 +22,7 @@ describe('clang-tidy', function()
         end_col = 19,
         end_lnum = 4,
         lnum = 4,
-        message = 'Division by zero [clang-analyzer-core.DivideZero]',
+        message = 'Division by zero[clang-analyzer-core.DivideZero]',
         namespace = ns,
         severity = 2,
         source = 'clang-tidy',
