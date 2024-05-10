@@ -41,6 +41,12 @@ M.djhtml = {
   stdin = true,
 }
 
+M.docformatter = {
+  cmd = 'docformatter',
+  args = { '-' },
+  stdin = true,
+}
+
 M.dprint = {
   cmd = 'dprint',
   args = { 'fmt', '--stdin' },

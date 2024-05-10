@@ -13,6 +13,7 @@
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
 - [ ] [csharpier](https://csharpier.com/)
 - [ ] [djhtml](https://github.com/rtts/djhtml)
+- [x] [docformatter](https://github.com/PyCQA/docformatter)
 - [ ] [dprint](https://dprint.dev/)
 - [ ] [eslint_d](https://github.com/mantoni/eslint_d.js)
 - [ ] [fish_indent](https://fishshell.com/docs/current/cmds/fish_indent.html)

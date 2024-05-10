@@ -5,7 +5,7 @@ CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/insta
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Install packages with package managers
 luarocks install luacheck &
-pip -qqq install autopep8 black djhtml flake8 isort pylint yapf codespell ruff sqlfluff clang-tidy mypy &
+pip -qqq install autopep8 black djhtml docformatter flake8 isort pylint yapf codespell ruff sqlfluff clang-tidy mypy &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
 gem install -q rubocop &
