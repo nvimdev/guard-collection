@@ -31,9 +31,16 @@ jobs:
           luaVersion: "luajit-2.1.0-beta3"
       - uses: leafo/gh-actions-luarocks@v4
       - uses: actions/setup-python@v4
-      - uses: actions-rs/toolchain@v1
+      - name: install stable Rust
+        uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+          default: true
+          components: rustfmt, cargo
+      - name: install nightly Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
           components: rustfmt, cargo
       - uses: actions/setup-node@v3
         with:
