@@ -156,6 +156,15 @@ M.rustfmt = {
   stdin = true,
 }
 
+-- Use the nightly version of `rustfmt` even in projects based on the stable toolchain
+-- The nightly version allows using more settings e.g. `wrap_comments` or `imports_granularity`
+-- Details: https://rust-lang.github.io/rustfmt/
+M.rustfmt_nightly = {
+  cmd = "rustup",
+  args = { "run", "nightly", "rustfmt", "--edition", "2021", "--emit", "stdout" },
+  stdin = true,
+}
+
 M.taplo = {
   cmd = 'taplo',
   args = { 'format', '-' },
