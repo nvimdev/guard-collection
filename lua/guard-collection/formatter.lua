@@ -160,8 +160,8 @@ M.rustfmt = {
 -- The nightly version allows using more settings e.g. `wrap_comments` or `imports_granularity`
 -- Details: https://rust-lang.github.io/rustfmt/
 M.rustfmt_nightly = {
-  cmd = "rustup",
-  args = { "run", "nightly", "rustfmt", "--edition", "2021", "--emit", "stdout" },
+  cmd = 'rustup',
+  args = { 'run', 'nightly', 'rustfmt', '--edition', '2021', '--emit', 'stdout' },
   stdin = true,
 }
 
