@@ -1,8 +1,8 @@
 local lint = require('guard.lint')
 
 return {
-  cmd = 'eslint',
-  args = { '--format', 'json', '--stdin', '--stdin-filename' },
+  cmd = 'npx',
+  args = { 'eslint', '--format', 'json', '--stdin', '--stdin-filename' },
   stdin = true,
   fname = true,
   find = {
@@ -11,6 +11,9 @@ return {
     '.eslintrc.yaml',
     '.eslintrc.yml',
     '.eslintrc.json',
+    'eslint.config.js',
+    'eslint.config.cjs',
+    'eslint.config.mjs',
   },
   parse = lint.from_json({
     get_diagnostics = function(...)
