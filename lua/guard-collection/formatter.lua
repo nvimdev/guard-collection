@@ -56,8 +56,8 @@ M.dprint = {
 }
 
 M.eslint_d = {
-  cmd = 'eslint_d',
-  args = { '--fix-to-stdout', '--stdin', '--stdin-filename' },
+  cmd = 'npx',
+  args = { 'eslint_d', '--fix-to-stdout', '--stdin', '--stdin-filename' },
   fname = true,
   stdin = true,
 }
@@ -137,8 +137,8 @@ M.pg_format = {
 }
 
 M.prettier = {
-  cmd = 'prettier',
-  args = { '--stdin-filepath' },
+  cmd = 'npx',
+  args = { 'prettier', '--stdin-filepath' },
   fname = true,
   stdin = true,
 }

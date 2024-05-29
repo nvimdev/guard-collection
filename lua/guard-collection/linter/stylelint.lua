@@ -1,8 +1,8 @@
 local lint = require('guard.lint')
 
 return {
-  cmd = 'stylelint',
-  args = { '--formatter', 'json', '--stdin', '--stdin-filename' },
+  cmd = 'npx',
+  args = { 'stylelint', '--formatter', 'json', '--stdin', '--stdin-filename' },
   stdin = true,
   fname = true,
   find = {
