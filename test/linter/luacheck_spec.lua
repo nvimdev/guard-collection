@@ -21,7 +21,7 @@ describe('luacheck', function()
         end_col = 0,
         end_lnum = 4,
         lnum = 4,
-        message = "accessing undefined variable 'U' [113]",
+        message = "accessing undefined variable 'U'[113]",
         namespace = ns,
         severity = 2,
         source = 'luacheck',
