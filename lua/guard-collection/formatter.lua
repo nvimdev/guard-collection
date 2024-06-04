@@ -107,6 +107,12 @@ M.ktlint = {
   stdin = true,
 }
 
+M.ktfmt = {
+  cmd = 'ktfmt',
+  args = { '-' },
+  stdin = true,
+}
+
 M.latexindent = {
   cmd = 'latexindent',
   stdin = true,
