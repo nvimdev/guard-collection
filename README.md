@@ -24,6 +24,7 @@
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
+- [ ] [ktfmt](https://github.com/facebook/ktfmt)
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
 - [ ] [mixformat](https://github.com/elixir-lang/elixir/)
 - [ ] [nixfmt](https://github.com/serokell/nixfmt)
