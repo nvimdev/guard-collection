@@ -12,7 +12,7 @@ describe('rustfmt', function()
       [[}]],
     })
     assert.are.same({
-      [[use std::{collections::HashMap, collections::HashSet};]],
+      [[use std::collections::{HashMap, HashSet};]],
       [[fn main() {]],
       [[    let var: usize = 1;]],
       [[    println!("{var}");]],
