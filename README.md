@@ -31,6 +31,7 @@
 - [ ] [ormolu](https://hackage.haskell.org/package/ormolu)
 - [ ] [pg_format](https://github.com/darold/pgFormatter)
 - [x] [prettier](https://github.com/prettier/prettier)
+- [x] [prettierd](https://github.com/fsouza/prettierd)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [rustfmt](https://github.com/rust-lang/rustfmt)
 - [x] [taplo](https://github.com/tamasfe/taplo)
