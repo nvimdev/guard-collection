@@ -149,6 +149,32 @@ M.prettier = {
   stdin = true,
 }
 
+M.prettierd = {
+  fn = function(buf, range)
+    if vim.fn.has('nvim-0.10') ~= 1 then
+      vim.notify('[guard-collection]: prettierd uses vim.system introduced in nvim 0.10', 4)
+      return
+    end
+    local srow = range and range['start'][1] or 0
+    local erow = range and range['end'][1] or -1
+    local handle = vim.system(
+      { 'prettierd', vim.api.nvim_buf_get_name(buf) },
+      {
+        stdin = true,
+      },
+      vim.schedule_wrap(function(result)
+        if result.code ~= 0 then
+          return
+        end
+        vim.api.nvim_buf_set_lines(buf, srow, erow, false, vim.split(result.stdout, '\r?\n'))
+        vim.cmd('silent! noautocmd write!')
+      end)
+    )
+    handle:write(table.concat(vim.api.nvim_buf_get_lines(buf, srow, erow, false), '\n'))
+    handle:write(nil)
+  end,
+}
+
 M.rubocop = {
   cmd = 'bundle',
   args = { 'exec', 'rubocop', '-A', '-f', 'quiet', '--stderr', '--stdin' },
