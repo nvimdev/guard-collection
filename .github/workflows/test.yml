@@ -63,11 +63,3 @@ jobs:
           for linter_test in ./test/linter/*_spec.lua; do
               vusted $linter_test
           done
-
-      - name: cache tools
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.rustup
-            ~/.local
-            /home/linuxbrew
