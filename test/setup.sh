@@ -8,11 +8,8 @@ luarocks install luacheck &
 pip -qqq install autopep8 black djhtml docformatter flake8 isort pylint yapf codespell ruff sqlfluff clang-tidy mypy &
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
-gem install -q rubocop &
 brew install \
-    hadolint fnlfmt hlint ormolu clang-format golines golangci-lint gofumpt detekt &
-# special setup
-export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
+    hlint ormolu clang-format golines gofumpt detekt &
 
 # Install standalone binary packages
 bin="$HOME/.local/bin"
