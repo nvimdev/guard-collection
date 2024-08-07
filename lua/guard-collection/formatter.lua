@@ -266,4 +266,11 @@ M.zigfmt = {
   stdin = true,
 }
 
+M.biome = {
+  cmd = 'biome',
+  args = { 'format', '--write' },
+  fname = true,
+  stdin = false,
+}
+
 return M
