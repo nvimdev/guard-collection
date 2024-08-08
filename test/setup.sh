@@ -7,7 +7,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 luarocks install luacheck &
 pip -qqq install autopep8 black djhtml docformatter flake8 isort pylint yapf codespell ruff sqlfluff clang-tidy mypy &
 npm install -g --silent \
-    prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli &
+    prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli @biomejs/biome &
 brew install \
     hlint ormolu clang-format golines gofumpt detekt &
 

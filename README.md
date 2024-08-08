@@ -9,6 +9,7 @@
 - `lsp` using `vim.lsp.buf.format`
 - [x] [autopep8](https://github.com/hhatto/autopep8)
 - [x] [black](https://github.com/psf/black)
+- [x] [biome](https://biomejs.dev)
 - [ ] [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [x] [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
 - [ ] [csharpier](https://csharpier.com/)
