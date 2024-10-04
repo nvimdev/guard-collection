@@ -38,7 +38,7 @@
 - [x] [taplo](https://github.com/tamasfe/taplo)
 - [ ] [shfmt](https://github.com/mvdan/sh)
 - [x] [stylua](https://github.com/JohnnyMorganz/StyLua)
-- [ ] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
+- [x] [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 - [ ] [swift-format](https://github.com/apple/swift-format)
 - [ ] [sqlfluff](https://github.com/sqlfluff/sqlfluff) as `sqlfluff format`
 - [x] [sqlfluff_fix](https://github.com/sqlfluff/sqlfluff) as `sqlfluff fix`

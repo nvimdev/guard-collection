@@ -216,7 +216,9 @@ M.stylua = {
 
 M.swiftformat = {
   cmd = 'swiftformat',
+  args = { '--stdinpath' },
   stdin = true,
+  fname = true,
 }
 
 M['swift-format'] = {
