@@ -9,7 +9,7 @@ pip -qqq install autopep8 black djhtml docformatter flake8 isort pylint yapf cod
 npm install -g --silent \
     prettier @fsouza/prettierd sql-formatter shellcheck shfmt @taplo/cli @biomejs/biome &
 brew install \
-    hlint ormolu clang-format golines gofumpt detekt &
+    hlint ormolu clang-format golines gofumpt detekt swiftformat &
 
 # Install standalone binary packages
 bin="$HOME/.local/bin"
