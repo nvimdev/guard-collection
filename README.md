@@ -27,6 +27,7 @@
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
 - [ ] [ktfmt](https://github.com/facebook/ktfmt)
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
+- [ ] [mdformat](https://github.com/executablebooks/mdformat)
 - [ ] [mixformat](https://github.com/elixir-lang/elixir/)
 - [ ] [nixfmt](https://github.com/serokell/nixfmt)
 - [ ] [ormolu](https://hackage.haskell.org/package/ormolu)
