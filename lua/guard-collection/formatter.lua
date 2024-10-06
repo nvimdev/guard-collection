@@ -118,6 +118,12 @@ M.latexindent = {
   stdin = true,
 }
 
+M.mdformat = {
+  cmd = 'mdformat',
+  args = { '-' },
+  stdin = true,
+}
+
 M.mixformat = {
   cmd = 'mix',
   args = { 'format', '-', '--stdin-filename' },
