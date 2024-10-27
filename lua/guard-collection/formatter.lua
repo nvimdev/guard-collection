@@ -35,6 +35,12 @@ M.csharpier = {
   stdin = true,
 }
 
+M.dart = {
+  cmd = 'dart',
+  args = { 'format' },
+  stdin = true,
+}
+
 M.djhtml = {
   cmd = 'djhtml',
   args = { '-' },
