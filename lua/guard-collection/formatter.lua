@@ -319,7 +319,6 @@ M.npm_groovy_lint_fix = {
 
 M.jq = {
   cmd = 'jq',
-  args = { '-M' },
   stdin = true,
 }
 
