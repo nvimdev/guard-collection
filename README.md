@@ -25,12 +25,15 @@
 - [x] [golines](https://pkg.go.dev/github.com/segmentio/golines)
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
+- [ ] [jq](https://github.com/jqlang/jq)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
 - [ ] [ktfmt](https://github.com/facebook/ktfmt)
 - [x] [latexindent](https://github.com/cmhughes/latexindent.pl)
 - [ ] [mdformat](https://github.com/executablebooks/mdformat)
 - [ ] [mixformat](https://github.com/elixir-lang/elixir/)
 - [ ] [nixfmt](https://github.com/serokell/nixfmt)
+- [ ] [npm_groovy_lint](https://github.com/nvuillam/npm-groovy-lint) as `npm-groovy-lint --format`
+- [ ] [npm_groovy_lint_fix](https://github.com/nvuillam/npm-groovy-lint) as `npm-groovy-lint --fix`
 - [ ] [ormolu](https://hackage.haskell.org/package/ormolu)
 - [ ] [pg_format](https://github.com/darold/pgFormatter)
 - [x] [prettier](https://github.com/prettier/prettier)
@@ -48,6 +51,9 @@
 - [x] [yapf](https://github.com/google/yapf)
 - [x] [ruff](https://github.com/astral-sh/ruff) as `ruff format`
 - [ ] [ruff_fix](https://github.com/astral-sh/ruff) as `ruff --fix`
+- [ ] [xmllint](https://gnome.pages.gitlab.gnome.org/libxml2/xmllint.html)
+- [ ] [yamlfix](https://github.com/lyz-code/yamlfix)
+- [ ] [yamlfmt](https://github.com/google/yamlfmt)
 - [ ] [zigfmt](https://github.com/ziglang/zig)
 
 ## Linters

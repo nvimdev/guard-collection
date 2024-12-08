@@ -14,6 +14,9 @@ return {
     'eslint.config.js',
     'eslint.config.cjs',
     'eslint.config.mjs',
+    'eslint.config.ts',
+    'eslint.config.cts',
+    'eslint.config.mts',
   },
   parse = lint.from_json({
     get_diagnostics = function(...)
