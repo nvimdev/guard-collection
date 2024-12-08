@@ -2,7 +2,6 @@ describe('gofmt', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('go'):fmt('gofmt')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('go', {
       [[package         main]],

@@ -4,7 +4,6 @@ describe('mypy', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('mypy')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('python', {
       [[def f(i: int) -> int:]],

@@ -4,7 +4,6 @@ describe('clang-tidy', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('c'):lint('clang-tidy')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('c', {
       [[#include <stdio.h>]],

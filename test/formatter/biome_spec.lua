@@ -1,8 +1,6 @@
 describe('biome', function()
   it('can format json', function()
     local ft = require('guard.filetype')
-    ft('json'):fmt('biome')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('json', {
       [[{"name":   "dove" , "age":10 ]],
@@ -16,7 +14,6 @@ describe('biome', function()
   it('can format javascript', function()
     local ft = require('guard.filetype')
     ft('js'):fmt('biome')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('js', {
       [[            const randomNumber = Math.floor(]],

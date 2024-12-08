@@ -4,7 +4,6 @@ describe('ruff', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('ruff')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('python', {
       [[import os]],

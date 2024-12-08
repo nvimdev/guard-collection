@@ -2,7 +2,6 @@ describe('rustfmt_nightly', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('rust'):fmt('rustfmt_nightly')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('rust', {
       [[use std::{collections::HashMap, collections::HashSet};]],

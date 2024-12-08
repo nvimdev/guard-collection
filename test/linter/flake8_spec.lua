@@ -4,7 +4,6 @@ describe('flake8', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('flake8')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('python', {
       [[import os]],

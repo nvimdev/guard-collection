@@ -4,7 +4,6 @@ describe('hlint', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('haskell'):lint('hlint')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('haskell', {
       [[concat $ map escapeC s]],

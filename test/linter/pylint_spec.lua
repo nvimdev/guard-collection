@@ -4,7 +4,6 @@ describe('pylint', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('python'):lint('pylint')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('python', {
       [[def foo(n):]],

@@ -2,7 +2,6 @@ describe('taplo', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('toml'):fmt('taplo')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('toml', {
       [[        [dependencies]        ]],

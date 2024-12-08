@@ -2,7 +2,6 @@ describe('clang-format', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('c'):fmt('clang-format')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('c', {
       [[#include <stdio.h>]],

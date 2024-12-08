@@ -2,7 +2,6 @@ describe('prettier', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('javascript'):fmt('prettier')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('javascript', {
       [[            const randomNumber = Math.floor(]],

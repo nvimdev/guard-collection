@@ -4,7 +4,6 @@ describe('luacheck', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('lua'):lint('luacheck')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('lua', {
       [[local M = {}]],

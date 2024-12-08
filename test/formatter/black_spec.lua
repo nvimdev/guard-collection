@@ -2,7 +2,6 @@ describe('black', function()
   it('can format', function()
     local ft = require('guard.filetype')
     ft('python'):fmt('black')
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('python', {
       [[def foo(n):]],

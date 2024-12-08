@@ -4,7 +4,6 @@ describe('selene', function()
     local ns = helper.namespace
     local ft = require('guard.filetype')
     ft('lua'):lint('selene')
-    require('guard').setup()
 
     local diagnostics = helper.test_with('lua', {
       [[local M = {}]],

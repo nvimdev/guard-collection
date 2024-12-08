@@ -3,7 +3,6 @@ describe('sqlfluff', function()
     local ft = require('guard.filetype')
     local tool = ft('sql'):fmt('sqlfluff')
     tool.formatter[1].args = vim.list_extend(tool.formatter[1].args, { '--dialect', 'ansi' })
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('sql', {
       [[SELECT          *]],
@@ -26,7 +25,6 @@ describe('sqlfluff', function()
     local ft = require('guard.filetype')
     local tool = ft('sql'):fmt('sqlfluff_fix')
     tool.formatter[1].args = vim.list_extend(tool.formatter[1].args, { '--dialect', 'ansi' })
-    require('guard').setup()
 
     local formatted = require('test.formatter.helper').test_with('sql', {
       [[SELECT]],

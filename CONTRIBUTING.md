@@ -9,7 +9,6 @@ describe('black', function()
     -- pre-test setup
     local ft = require('guard.filetype')
     ft('python'):fmt('black')
-    require('guard').setup()
     -- Giving example input to the helper
     -- the helper creates a new buffer with it, formats, and returns the formatted output
     local formatted = require('test.formatter.helper').test_with('python', {
@@ -99,7 +98,7 @@ ln -s ~/.local/share/nvim/lazy/guard.nvim/lua/guard lua
   ok 1 - <tool-name> can format
   ok 1 - <tool-name> can lint
   ```
-  
+
 - Modify `test/setup.sh` so that CI installs your tool
 
 - Optionally, format the code with stylua
