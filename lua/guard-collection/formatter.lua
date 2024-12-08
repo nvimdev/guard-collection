@@ -307,14 +307,14 @@ M.yamlfmt = {
 
 M.npm_groovy_lint = {
   cmd = 'npm-groovy-lint',
-  args = { '--format' },
-  fname = true,
+  args = { '--format', '-' },
+  stdin = true,
 }
 
 M.npm_groovy_lint_fix = {
   cmd = 'npm-groovy-lint',
-  args = { '--fix' },
-  fname = true,
+  args = { '--fix', '-' },
+  stdin = true,
 }
 
 M.jq = {
