@@ -1,6 +1,7 @@
 describe('biome', function()
   it('can format json', function()
     local ft = require('guard.filetype')
+    ft('json'):fmt('biome')
 
     local formatted = require('test.formatter.helper').test_with('json', {
       [[{"name":   "dove" , "age":10 ]],

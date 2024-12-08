@@ -1,6 +1,6 @@
 local M = {}
 local api = vim.api
-require('guard.lint')
+local lint = require('guard.lint')
 M.namespace = api.nvim_get_namespaces().Guard
 
 function M.test_with(ft, input)
@@ -12,8 +12,8 @@ function M.test_with(ft, input)
   api.nvim_buf_set_lines(bufnr, 0, -1, false, input)
   -- To make linters happy
   vim.cmd('silent! write! /tmp/test.' .. ft)
-  require('guard.lint').do_lint(bufnr)
-  vim.wait(3000)
+  lint.do_lint(bufnr)
+  vim.wait(5000)
   return vim.diagnostic.get(bufnr)
 end
 
