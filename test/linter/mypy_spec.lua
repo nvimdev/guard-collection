@@ -14,6 +14,18 @@ describe('mypy', function()
       [[    a, b = b, a+b]],
     })
 
-    assert.are.same({}, diagnostics)
+    assert.are.same({
+      {
+        bufnr = 3,
+        col = 4,
+        end_col = 10,
+        end_lnum = 4,
+        lnum = 4,
+        message = 'Incompatible types in "yield" (actual type "int", expected type "str") [misc]',
+        namespace = 2,
+        severity = 1,
+        source = 'mypy',
+      },
+    }, diagnostics)
   end)
 end)
