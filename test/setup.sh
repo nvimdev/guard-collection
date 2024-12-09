@@ -45,13 +45,13 @@ chmod +x nixfmt
 mv nixfmt $bin/nixfmt
 
 # ktlint
-wget -q https://github.com/pinterest/ktlint/releases/download/1.0.0/ktlint
+wget -q "$gh/pinterest/ktlint/releases/download/1.0.0/ktlint"
 chmod +x ktlint 
 mv ktlint $bin/ktlint
 
 # test setup
 export PATH="$HOME/.local/bin:$PATH"
 luarocks install vusted
-git clone https://github.com/nvimdev/guard.nvim $HOME/guard.nvim
-mv $HOME/guard.nvim/lua/guard ./lua/
+git clone "$gh/nvimdev/guard.nvim" "$HOME/guard.nvim"
+mv "$HOME/guard.nvim/lua/guard" ./lua/
 wait
