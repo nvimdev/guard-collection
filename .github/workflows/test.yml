@@ -22,40 +22,50 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: rhysd/action-setup-vim@v1
+      - name: Test Setup (Neovim Nightly)
+        uses: rhysd/action-setup-vim@v1
         id: vim
         with:
           neovim: true
           version: nightly
 
-      - uses: leafo/gh-actions-lua@v10
+      - name: Test Setup (Lua)
+        uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: "luajit-openresty"
 
-      - uses: leafo/gh-actions-luarocks@v4
+      - name: Test Setup (Luarocks)
+        uses: leafo/gh-actions-luarocks@v4
 
-      - uses: actions/setup-python@v4
+      - name: Package Manager Setup (Python)
+        uses: actions/setup-python@v4
 
-      - uses: actions-rs/toolchain@v1
+      - name: Package Manager Setup (Rust)
+        uses: actions-rs/toolchain@v1
         with:
           toolchain: nightly
           components: rustfmt, cargo
 
-      - uses: actions/setup-node@v3
+      - name: Package Manager Setup (npm)
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: setup environment
+      - name: Package Manager Setup (homebrew)
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Install Tools
         shell: bash
         run: bash ./test/setup.sh
 
-      - name: formatter test
+      - name: Formatter Test
         shell: bash
         run: |
           source ./test/env.sh
           vusted ./test/formatter
 
-      - name: linter test
+      - name: Linter Test
         shell: bash
         if: always()
         run: |
