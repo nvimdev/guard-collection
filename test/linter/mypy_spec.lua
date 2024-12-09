@@ -6,7 +6,8 @@ describe('mypy', function()
     ft('python'):lint('mypy')
 
     local diagnostics = helper.test_with('python', {
-      [[def fib(n) -> Iterator[int]:]],
+      [[from typing import Iterator]],
+      [[def fib(n) -> Iterator[str]:]],
       [[  a, b = 0, 1]],
       [[  while a < n:]],
       [[    yield a]],
