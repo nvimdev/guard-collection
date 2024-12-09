@@ -6,8 +6,8 @@ describe('ruff', function()
     ft('python'):lint('ruff')
 
     local diagnostics = helper.test_with('python', {
-      [[def foo(n):]],
-      [[  return n + 42]],
+      [[import os]],
+      [[print("foo")]],
     })
     assert.are.same({}, diagnostics)
   end)
