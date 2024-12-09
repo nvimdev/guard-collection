@@ -69,7 +69,7 @@
 - [x] [hlint](https://github.com/ndmitchell/hlint)
 - [ ] [ktlint](https://github.com/pinterest/ktlint)
 - [x] [luacheck](https://github.com/lunarmodules/luacheck)
-- [x] [sqlfluff](https://github.com/sqlfluff/sqlfluff)
+- [ ] [sqlfluff](https://github.com/sqlfluff/sqlfluff)
 - [x] [pylint](https://github.com/PyCQA/pylint)
 - [ ] [rubocop](https://github.com/rubocop/rubocop)
 - [x] [selene](https://github.com/Kampfkarren/selene)

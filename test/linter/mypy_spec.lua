@@ -22,7 +22,7 @@ describe('mypy', function()
         end_lnum = 4,
         lnum = 4,
         message = 'Incompatible types in "yield" (actual type "int", expected type "str") [misc]',
-        namespace = 2,
+        namespace = ns,
         severity = 1,
         source = 'mypy',
       },
