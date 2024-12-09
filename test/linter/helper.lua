@@ -16,7 +16,6 @@ function M.test_with(ft, input)
 
   lint.do_lint(bufnr)
   vim.wait(3000)
-  vim.print(vim.diagnostic.get(bufnr))
   return vim.diagnostic.get(bufnr)
 end
 
