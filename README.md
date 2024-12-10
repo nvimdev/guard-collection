@@ -22,6 +22,7 @@
 - [ ] [fnlfmt](https://git.sr.ht/~technomancy/fnlfmt)
 - [x] [gofmt](https://pkg.go.dev/cmd/gofmt)
 - [x] [gofumpt](https://pkg.go.dev/mvdan.cc/gofumpt)
+- [ ] [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports)
 - [x] [golines](https://pkg.go.dev/github.com/segmentio/golines)
 - [ ] [google-java-format](https://github.com/google/google-java-format)
 - [ ] [isort](https://github.com/PyCQA/isort)
