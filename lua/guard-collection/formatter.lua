@@ -322,4 +322,9 @@ M.jq = {
   stdin = true,
 }
 
+M.goimports = {
+  cmd = 'goimports',
+  stdin = true,
+}
+
 return M
