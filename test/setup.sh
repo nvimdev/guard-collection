@@ -25,8 +25,8 @@ mv ./cbfmt_linux-x86_64_v0.2.0/cbfmt $bin
 chmod +x $bin/cbfmt
 
 # selene
-wget -q "$gh/Kampfkarren/selene/releases/download/0.25.0/selene-0.25.0-linux.zip"
-unzip selene-0.25.0-linux.zip -d $bin
+wget -q "$gh/Kampfkarren/selene/releases/download/0.28.0/selene-0.28.0-linux.zip"
+unzip selene-0.28.0-linux.zip -d $bin
 chmod +x $bin/selene
 
 # stylua
