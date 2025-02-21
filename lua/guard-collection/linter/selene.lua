@@ -2,7 +2,7 @@ local lint = require('guard.lint')
 
 return {
   cmd = 'selene',
-  args = { '--no-summary', '--display-style', 'json2' },
+  args = { '--no-summary', '--display-style', 'json2', '-' },
   stdin = true,
   parse = lint.from_json({
     attributes = {
