@@ -282,9 +282,9 @@ M.zigfmt = {
 
 M.biome = {
   cmd = 'biome',
-  args = { 'format', '--write' },
+  args = { 'format', '--write', '--indent-style=space' },
   fname = true,
-  stdin = false,
+  stdin = true,
 }
 
 M.xmllint = {
