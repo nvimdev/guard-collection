@@ -6,9 +6,20 @@ describe('selene', function()
     ft('lua'):lint('selene')
 
     local diagnostics = helper.test_with('lua', {
-      [[a = b]],
-      [[b = a]],
+      [[print(a)]],
     })
-    assert.are.same({}, diagnostics)
+    assert.are.same({
+      {
+        bufnr = 3,
+        col = 6,
+        end_col = 0,
+        end_lnum = 0,
+        lnum = 0,
+        message = '`a` is not defined[undefined_variable]',
+        namespace = ns,
+        severity = 1,
+        source = 'selene',
+      },
+    }, diagnostics)
   end)
 end)
