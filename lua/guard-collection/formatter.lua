@@ -6,6 +6,12 @@ M.lsp = {
   end,
 }
 
+M.alejandra = {
+  cmd = 'alejandra',
+  args = { '--quiet' },
+  stdin = true,
+}
+
 M.autopep8 = {
   cmd = 'autopep8',
   args = { '-' },

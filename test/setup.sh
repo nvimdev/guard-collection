@@ -18,6 +18,11 @@ bin="$HOME/.local/bin"
 gh="https://github.com"
 mkdir -p $bin
 
+# alejandra
+wget -q $gh"/kamadorueda/alejandra/releases/download/4.0.0/alejandra-x86_64-unknown-linux-musl"
+mv ./alejandra-x86_64-unknown-linux-musl $bin/alejandra
+chmod +x $bin/alejandra
+
 # cbfmt
 wget -q $gh"/lukas-reineke/cbfmt/releases/download/v0.2.0/cbfmt_linux-x86_64_v0.2.0.tar.gz"
 tar -xvf cbfmt_linux-x86_64_v0.2.0.tar.gz
