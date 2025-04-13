@@ -64,7 +64,9 @@ return function(cmd, args)
           tonumber(mes.col) - opts.offset,
           ('%s [%s]'):format(mes.message, code),
           opts.severities[mes.severity],
-          opts.source
+          opts.source,
+          nil,
+          nil
         )
 
         diag.end_col = tonumber(mes.end_col) - opts.offset

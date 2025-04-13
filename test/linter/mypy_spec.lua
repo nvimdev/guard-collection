@@ -6,22 +6,18 @@ describe('mypy', function()
     ft('python'):lint('mypy')
 
     local diagnostics = helper.test_with('python', {
-      [[from typing import Iterator]],
-      [[def fib(n) -> Iterator[str]:]],
-      [[  a, b = 0, 1]],
-      [[  while a < n:]],
-      [[    yield a]],
-      [[    a, b = b, a+b]],
+      [[def foo() -> str:]],
+      [[    return 42]],
     })
 
     assert.are.same({
       {
         bufnr = 3,
-        col = 4,
-        end_col = 10,
-        end_lnum = 4,
-        lnum = 4,
-        message = 'Incompatible types in "yield" (actual type "int", expected type "str") [misc]',
+        col = 11,
+        end_col = 12,
+        end_lnum = 1,
+        lnum = 1,
+        message = 'Incompatible return value type (got "int", expected "str") [return-value]',
         namespace = ns,
         severity = 1,
         source = 'mypy',
