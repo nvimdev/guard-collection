@@ -13,7 +13,6 @@ local args = {
   '--follow-imports=silent',
 }
 
-local unpack = table.unpack or unpack
 return {
   mypy = base('mypy', args),
   mypyc = base('mypyc', args),
