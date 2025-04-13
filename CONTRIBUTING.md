@@ -48,7 +48,7 @@ describe('selene', function()
     require('guard').setup()
     -- Giving example input to the helper
     -- the helper creates a new buffer with it, requires lint, and returns the diagnostics
-    local diagnostics = require('test.linter.helper').test_with('lua', {
+    local buf, diagnostics = require('test.linter.helper').test_with('lua', {
       -- Make sure the input actually has some problems that the linter detects
       [[local M = {}]],
       [[function M.foo()]],
@@ -60,7 +60,7 @@ describe('selene', function()
     -- Show that the diagnostics is indeed valid
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 4,

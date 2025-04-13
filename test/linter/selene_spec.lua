@@ -5,12 +5,12 @@ describe('selene', function()
     local ft = require('guard.filetype')
     ft('lua'):lint('selene')
 
-    local diagnostics = helper.test_with('lua', {
+    local buf, diagnostics = helper.test_with('lua', {
       [[print(a)]],
     })
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 6,
         end_col = 0,
         end_lnum = 0,

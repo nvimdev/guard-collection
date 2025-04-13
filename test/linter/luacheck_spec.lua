@@ -5,7 +5,7 @@ describe('luacheck', function()
     local ft = require('guard.filetype')
     ft('lua'):lint('luacheck')
 
-    local diagnostics = helper.test_with('lua', {
+    local buf, diagnostics = helper.test_with('lua', {
       [[local M = {}]],
       [[function M.foo()]],
       [[  print("foo")]],
@@ -15,7 +15,7 @@ describe('luacheck', function()
     })
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 4,

@@ -5,7 +5,7 @@ describe('clang-tidy', function()
     local ft = require('guard.filetype')
     ft('c'):lint('clang-tidy')
 
-    local diagnostics = helper.test_with('c', {
+    local buf, diagnostics = helper.test_with('c', {
       [[#include <stdio.h>]],
       [[int main() {]],
       [[    int x = 10;]],
@@ -16,7 +16,7 @@ describe('clang-tidy', function()
     })
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 19,
         end_col = 19,
         end_lnum = 4,

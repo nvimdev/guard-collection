@@ -5,7 +5,7 @@ describe('flake8', function()
     local ft = require('guard.filetype')
     ft('python'):lint('flake8')
 
-    local diagnostics = helper.test_with('python', {
+    local buf, diagnostics = helper.test_with('python', {
       [[import os]],
       [[]],
       [[def foo(n):]],
@@ -15,7 +15,7 @@ describe('flake8', function()
     })
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 0,
@@ -26,7 +26,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 2,
@@ -37,7 +37,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 9,
         end_col = 9,
         end_lnum = 4,
@@ -48,7 +48,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 9,
         end_col = 9,
         end_lnum = 4,
@@ -59,7 +59,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 15,
         end_col = 15,
         end_lnum = 4,
@@ -70,7 +70,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 17,
         end_col = 17,
         end_lnum = 4,
@@ -81,7 +81,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 5,
@@ -92,7 +92,7 @@ describe('flake8', function()
         source = 'flake8',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 79,
         end_col = 79,
         end_lnum = 5,

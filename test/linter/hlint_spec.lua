@@ -5,14 +5,14 @@ describe('hlint', function()
     local ft = require('guard.filetype')
     ft('haskell'):lint('hlint')
 
-    local diagnostics = helper.test_with('haskell', {
+    local buf, diagnostics = helper.test_with('haskell', {
       [[concat $ map escapeC s]],
       [[ftable ++ (map (\ (c, x) -> (toUpper c, urlEncode x)) ftable)]],
       [[mapM (delete_line (fn2fp f) line) old]],
     })
     assert.are.same({
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 0,
         end_col = 0,
         end_lnum = 0,
@@ -23,7 +23,7 @@ describe('hlint', function()
         source = 'hlint',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 10,
         end_col = 10,
         end_lnum = 1,
@@ -34,7 +34,7 @@ describe('hlint', function()
         source = 'hlint',
       },
       {
-        bufnr = 3,
+        bufnr = buf,
         col = 16,
         end_col = 16,
         end_lnum = 1,
