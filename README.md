@@ -7,6 +7,7 @@
 ## Formatters
 
 - `lsp` using `vim.lsp.buf.format`
+- [x] [alejandra](https://github.com/kamadorueda/alejandra)
 - [x] [autopep8](https://github.com/hhatto/autopep8)
 - [x] [black](https://github.com/psf/black)
 - [x] [biome](https://biomejs.dev)
