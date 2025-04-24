@@ -78,6 +78,7 @@
 - [ ] [shellcheck](https://github.com/koalaman/shellcheck)
 - [ ] [stylelint](https://stylelint.io/)
 - [x] [ruff](https://github.com/astral-sh/ruff)
+- [ ] [typos](https://github.com/crate-ci/typos)
 - [ ] [mypy](https://mypy.readthedocs.io/en/stable/index.html)
 - [ ] [mypyc](https://mypyc.readthedocs.io/en/latest/index.html)
 - [ ] [dmypy](https://mypy.readthedocs.io/en/stable/mypy_daemon.html)
