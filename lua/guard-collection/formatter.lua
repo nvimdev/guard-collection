@@ -221,6 +221,12 @@ M.taplo = {
   stdin = true,
 }
 
+M.typstyle = {
+  cmd = 'typstyle',
+  args = {},
+  stdin = true,
+}
+
 M.shfmt = {
   cmd = 'shfmt',
   stdin = true,

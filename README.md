@@ -42,6 +42,7 @@
 - [rubocop](https://github.com/rubocop/rubocop)
 - [rustfmt](https://github.com/rust-lang/rustfmt)
 - [taplo](https://github.com/tamasfe/taplo)
+- [typstyle](https://github.com/Enter-tainer/typstyle)
 - [shfmt](https://github.com/mvdan/sh)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [swiftformat](https://github.com/nicklockwood/SwiftFormat)
