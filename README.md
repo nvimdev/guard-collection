@@ -12,6 +12,7 @@
 - [biome](https://biomejs.dev)
 - [cbfmt](https://github.com/lukas-reineke/cbfmt)
 - [clang-format](https://www.kernel.org/doc/html/latest/process/clang-format.html)
+- [cljfmt](https://github.com/weavejester/cljfmt)
 - [csharpier](https://csharpier.com/)
 - [dart](https://github.com/dart-lang)
 - [djhtml](https://github.com/rtts/djhtml)
