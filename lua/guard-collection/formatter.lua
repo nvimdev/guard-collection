@@ -345,4 +345,10 @@ M.goimports = {
   stdin = true,
 }
 
+M.tombi = {
+  cmd = 'tombi',
+  args = { 'format', '-' },
+  stdin = true,
+}
+
 return M
