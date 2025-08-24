@@ -58,6 +58,7 @@
 - [yamlfix](https://github.com/lyz-code/yamlfix)
 - [yamlfmt](https://github.com/google/yamlfmt)
 - [zigfmt](https://github.com/ziglang/zig)
+- [tombi](https://github.com/tombi-toml/tombi)
 
 ## Linters
 
