@@ -347,7 +347,7 @@ M.goimports = {
 
 M.tombi = {
   cmd = 'tombi',
-  args = { 'format', '-' },
+  args = { 'format', '--offline', '-' },
   stdin = true,
 }
 
