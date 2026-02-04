@@ -311,6 +311,12 @@ M.biome = {
   stdin = true,
 }
 
+M.buf = {
+  cmd = 'buf',
+  args = { 'format' },
+  stdin = true,
+}
+
 M.xmllint = {
   cmd = 'xmllint',
   args = { '--format', '-' },
