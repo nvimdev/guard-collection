@@ -1,4 +1,5 @@
 return {
+  checkmake = require('guard-collection.linter.checkmake'),
   ['clang-tidy'] = require('guard-collection.linter.clang-tidy'),
   codespell = require('guard-collection.linter.codespell'),
   detekt = require('guard-collection.linter.detekt'),
