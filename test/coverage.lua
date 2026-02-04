@@ -1,8 +1,8 @@
 #!/usr/bin/env -S nvim -l
 
-local function get_test_names(dir)
+local function get_test_names(base_dir)
   local tests = {}
-  local handle = io.popen('ls ' .. dir .. '/*_spec.lua 2>/dev/null')
+  local handle = io.popen('find ' .. base_dir .. ' -name "*_spec.lua" 2>/dev/null')
   if handle then
     for line in handle:lines() do
       local name = line:match('/([^/]+)_spec%.lua$')
@@ -31,8 +31,9 @@ package.path = 'lua/?.lua;lua/?/init.lua;' .. package.path
 local formatters = require('guard-collection.formatter')
 local linters = require('guard-collection.linter')
 
-local formatter_tests = get_test_names('test/formatter')
-local linter_tests = get_test_names('test/linter')
+local all_tests = get_test_names('test')
+local formatter_tests = all_tests
+local linter_tests = all_tests
 
 local formatter_exclude = { lsp = true }
 local linter_exclude = { mypyc = true, dmypy = true }
