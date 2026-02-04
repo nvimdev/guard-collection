@@ -319,8 +319,9 @@ M.biome = {
 
 M.buf = {
   cmd = 'buf',
-  args = { 'format', '-w' },
+  args = { 'format' },
   fname = true,
+  stdin = true,
 }
 
 M.xmllint = {
