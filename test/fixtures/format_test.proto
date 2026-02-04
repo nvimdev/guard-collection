@@ -1,3 +1,0 @@
-syntax = "proto3";
-package test;
-message Foo{string bar=1;}
