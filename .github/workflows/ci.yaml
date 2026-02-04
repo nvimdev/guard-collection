@@ -25,6 +25,8 @@ jobs:
         with:
           neovim: true
           version: nightly
+      - name: Clone guard.nvim
+        run: git clone --depth 1 https://github.com/nvimdev/guard.nvim && mv guard.nvim/lua/guard lua/
       - name: Check test coverage
         run: nvim -l test/coverage.lua
 
