@@ -14,8 +14,8 @@ function M.test_with(ft, input)
   vim.bo[bufnr].filetype = ft
   api.nvim_set_current_buf(bufnr)
   api.nvim_buf_set_lines(bufnr, 0, -1, false, input)
-  -- To make linters happy
-  vim.cmd('silent! write! /tmp/test.' .. ft)
+  -- To make linters happy (use project dir, not /tmp, for tools like buf that scan parents)
+  vim.cmd('silent! write! test/test.' .. ft)
 
   lint.do_lint(bufnr)
   vim.wait(3000)
