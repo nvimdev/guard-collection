@@ -30,6 +30,12 @@ M.cbfmt = {
   stdin = true,
 }
 
+M['cmake-format'] = {
+  cmd = 'cmake-format',
+  args = { '-' },
+  stdin = true,
+}
+
 M['clang-format'] = {
   cmd = 'clang-format',
   stdin = true,
