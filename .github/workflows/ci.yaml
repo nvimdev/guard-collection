@@ -17,6 +17,17 @@ jobs:
           version: 2.0.2
           args: --check .
 
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: nightly
+      - name: Check test coverage
+        run: nvim -l test/coverage.lua
+
   test-pip:
     runs-on: ubuntu-latest
     steps:
