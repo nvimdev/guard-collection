@@ -2,6 +2,7 @@ return {
   cmd = 'buf',
   args = { 'lint', '--error-format=json' },
   fname = true,
+  ignore_exit_code = true,
   parse = require('guard.lint').from_json({
     lines = true,
     attributes = {

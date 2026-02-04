@@ -3,7 +3,7 @@ describe('buf', function()
     local ft = require('guard.filetype')
     ft('proto'):fmt('buf')
     local formatted = require('test.fmt_helper').test_with('proto', {
-      [[syntax="proto3";]],
+      [[syntax = "proto3";]],
       [[message Foo{string bar=1;}]],
     })
     assert.are.same({
@@ -26,11 +26,23 @@ describe('buf', function()
       [[  string Bar = 1;]],
       [[}]],
     })
-    helper.assert_diagnostics(diagnostics, {
+    assert.are.same({
+      {
+        bufnr = buf,
+        col = 0,
+        end_col = 0,
+        end_lnum = 0,
+        lnum = 0,
+        message = 'Files must have a package defined.',
+        namespace = ns,
+        severity = 2,
+        source = 'buf',
+        code = 'PACKAGE_DEFINED',
+      },
       {
         bufnr = buf,
         col = 8,
-        end_col = 0,
+        end_col = 11,
         end_lnum = 1,
         lnum = 1,
         message = 'Message name "foo" should be PascalCase, such as "Foo".',
@@ -42,7 +54,7 @@ describe('buf', function()
       {
         bufnr = buf,
         col = 9,
-        end_col = 0,
+        end_col = 12,
         end_lnum = 2,
         lnum = 2,
         message = 'Field name "Bar" should be lower_snake_case, such as "bar".',
@@ -51,6 +63,6 @@ describe('buf', function()
         source = 'buf',
         code = 'FIELD_LOWER_SNAKE_CASE',
       },
-    })
+    }, diagnostics)
   end)
 end)
