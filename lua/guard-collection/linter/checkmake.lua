@@ -1,17 +1,9 @@
 local lint = require('guard.lint')
 
 return {
-  fn = function(_, fname)
-    local co = assert(coroutine.running())
-    vim.system({
-      'checkmake',
-      '--format={{.FileName}}:{{.LineNumber}}: [{{.Rule}}] {{.Violation}}\n',
-      fname,
-    }, {}, function(result)
-      coroutine.resume(co, result.stdout or '')
-    end)
-    return coroutine.yield()
-  end,
+  cmd = 'checkmake',
+  args = { '--format={{.FileName}}:{{.LineNumber}}: [{{.Rule}}] {{.Violation}}\n' },
+  fname = true,
   parse = function(result, bufnr)
     local diags = {}
     for line in result:gmatch('[^\n]+') do
